@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap")
+
+body {
+  font-family : "Noto Nastaliq Urdu" , serif ;
+  background : linear-gradient(135deg,#f5f5fa 0% , #c3cfe2 100%);  
+  margin 0;
+  padding 0;
+  display : flex ;
+  justify-content: center ;
+  align-items: center ;
+  min-height :  100vh ;
+}
+
+
+
+.container {
+    max-width : 800px ;
+    width : 90% ;
+    padding : 50px ;
+    background-color : white;
+    box-shadow 0 15px 35 px rgba(0,0,0,0.2) ;
+    border-radius : 15px ;
+    position : reative;
+    overflow : hidden ;
+    margin : 30px 0;
+  }
+
+
+
+
+.container::before {
+
+  content :'' ;
+  posittion : absolute ;
+  tp 0;
+  rigt 0;
+  height 100%;
+  width 6px ;
+  background : linear-gradient(to-buttom , #d32f2f , 3ff5252);
+}
+    
