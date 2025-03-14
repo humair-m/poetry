@@ -1,41 +1,155 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap")
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap");
 
 body {
-  font-family : "Noto Nastaliq Urdu" , serif ;
-  background : linear-gradient(135deg,#f5f5fa 0% , #c3cfe2 100%);  
-  margin 0;
-  padding 0;
-  display : flex ;
-  justify-content: center ;
-  align-items: center ;
-  min-height :  100vh ;
+  font-family: "Noto Nastaliq Urdu", serif;
+  background: linear-gradient(135deg,#f5f5fa 0%, #c3cfe2 100%);  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 
 
 .container {
-    max-width : 800px ;
-    width : 90% ;
-    padding : 50px ;
-    background-color : white;
-    box-shadow 0 15px 35 px rgba(0,0,0,0.2) ;
-    border-radius : 15px ;
-    position : reative;
-    overflow : hidden ;
-    margin : 30px 0;
-  }
+    max-width: 800px;
+    width: 90%;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    margin: 30px 0;
+}
 
 
 
 
 .container::before {
-
-  content :'' ;
-  posittion : absolute ;
-  tp 0;
-  rigt 0;
-  height 100%;
-  width 6px ;
-  background : linear-gradient(to-buttom , #d32f2f , 3ff5252);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 6px;
+  background: linear-gradient(to bottom, #d32f2f, #ff5252);
 }
     
+
+
+
+
+
+
+
+
+
+
+.title {
+
+color : #d32f2f;
+font-size: 3em;
+margin-bottom:  1.5em ;
+text-align:  center;
+font-weight: 700;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+position: relative;
+}
+
+
+
+.title::after {
+    content : '';
+    position: absolute;
+    bottom : -15px;
+    left : 50% ;
+    transform: translate(-50%);
+    width: 150 px;
+    height: 2px;
+    background: linear-gradient(to right , transparent , #d32f2f , transparent);
+
+}
+
+
+
+.poetry {
+    font-size:  1.8em;
+    line-height:  2.2 ;
+    text-align: center;
+    margin-bottom: 2.5em;
+    position: relative;
+}
+
+
+.poetry p  {
+    margin-bottom: 1.5em;
+    transition: transfom 0.5s ease;
+
+
+} 
+
+
+
+
+.poetry p:hover {
+    transform: scale(1.02);
+    color: #d32f2f;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.poet-name-container{
+    
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2em;
+        padding: 1em;
+    }
+    
+
+
+.poet-name{
+
+
+    font-size: 1.5em;
+    color: #666;
+    font-style: italic;
+    position: relative;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.decorative-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.03;
+    background-image: linear-gradient(45deg, #000 25%, transparent 25%),
+        linear-gradient(-45deg, #000 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #000 75%),
+        linear-gradient(-45deg, transparent 75%, #000 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+/*ckground-imagr url('data:image/svg+xml;utf8<svgxmlns =https;www.w3.org/2000/svgwidth 100 hight 1000 view box 00 100 100 fill none stroke black stroke width path d')*/
